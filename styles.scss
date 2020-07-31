@@ -1,9 +1,22 @@
-@import './styles/generic/_generic-normalize.scss';
+@import './styles/generic/_generic-normalize';
 
-@import './styles/settings/_settings-typography.scss';
-@import './styles/settings/_settings-colors.scss';
-@import './styles/settings/_settings-breakpoints.scss';
+@import './styles/settings/_settings-typography';
+@import './styles/settings/_settings-colors';
+@import './styles/settings/_settings-breakpoints';
+@import'./styles/settings/settings-shadows';
 
+
+@import'./styles/objects/_objects-containers';
+
+@import'./styles/elements/_elements-image';
+@import'./styles/elements/_elements-links';
+
+@import'./styles/components/_components-button';
+@import'./styles/components/_components-header';
+@import'./styles/components/_components-navigation';
+
+
+@import'./styles/utilities/_utilities-centered';
 
 
 
