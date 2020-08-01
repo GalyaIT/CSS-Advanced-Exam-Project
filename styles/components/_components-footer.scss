@@ -1,0 +1,96 @@
+@import "./../settings/_settings-colors.scss";
+@import "./../settings/_settings-breakpoints";
+@import "./../settings/settings-shadows";
+
+.c-footer {
+    background-color: $grey-700;
+    position: relative;
+    align-self: center;
+    &:before {
+        content: "";
+        background-color: $grey-500;
+        width: 100%;
+        height: 10px;
+        top: -10;
+        left: 0;
+        position: absolute;
+    }
+    & h5 {
+        margin: 0;
+        color: $white;     
+    }
+    &__navbar__items {
+        padding: 0;
+    }
+    &__navbar__item {
+        list-style: none;
+        margin: 15px 0;
+    }
+    &__navbar__item a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey-200;
+        font-weight: normal;
+    }
+    &__navbar__item a:hover {
+        cursor: pointer;
+        color: $primary-300;
+    }
+    @include for-phone-only {
+        &__emoji {
+            display: none;
+        }
+        &-wrapper {
+            display: grid;
+            grid-template-rows: 480px;
+            align-items: center;
+            min-width: 335px;
+            padding-top:20px;
+        }
+        &-navigation {
+            display: grid;
+            grid-template-columns: 156px 198px;
+        }
+        &-kids-and-learning{
+            display: grid;          
+            grid-template-rows: 280px 120px;
+            grid-row-gap: 10px;
+        }
+        &__navbar--found-us &__navbar__items {
+            display: grid;
+            grid-template-columns: 20px 20px;
+            grid-column-gap: 30px;
+        }
+        &__navbar--found-us &__navbar__item .fa {
+            font-size: 1.9em !important;
+       
+        }
+        &-all-and-found-us {
+            display: grid;
+            grid-template-rows: 190px 200px;
+            grid-row-gap: 5px;
+        }
+        &__section--found-us h5 {
+            display: none;
+        }
+        &-copy-right {
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-200;
+            opacity: 0.4;
+            padding: 0 60px 25px 60px;
+            text-align: center;
+            position: relative;
+            &:before {
+                content: "";
+                background-color: $grey-600;
+                width: 90%;
+                height: 2px;
+                top: -35px;
+                left: 15px;
+                position: absolute;
+            }
+        }
+    }
+}

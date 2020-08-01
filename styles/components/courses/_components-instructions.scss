@@ -1,0 +1,42 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-instructions {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    position: relative;
+    grid-row-gap: 60px;
+    & h2 {
+        width: 60%;
+        padding-left: 50px;
+    }
+    & span{
+        font-weight: bold;
+    }
+
+    &__people {
+        position: relative;
+        &::before {
+            content: url(./../../../assets/icons/people.svg);
+            position: absolute;
+            left: 0px;
+            top: 28px;
+        }
+        &::after {
+            content: url(./../../../assets/images/horizontal-border.svg);
+            position: absolute;
+            left: 0;
+            top: 235px;
+        }
+    }
+    &__discount {
+        position: relative;
+        &::before {
+            content: url(./../../../assets/icons/bell.svg);
+            position: absolute;
+            left: 0px;
+            top: 28px;
+        }
+    }
+}

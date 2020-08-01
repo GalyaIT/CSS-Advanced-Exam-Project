@@ -5,7 +5,6 @@
 @import './styles/settings/_settings-breakpoints';
 @import'./styles/settings/settings-shadows';
 
-
 @import'./styles/objects/_objects-containers';
 
 @import'./styles/elements/_elements-image';
@@ -14,7 +13,13 @@
 @import'./styles/components/_components-button';
 @import'./styles/components/_components-header';
 @import'./styles/components/_components-navigation';
-
+@import'./styles/components/_components-footer';
+@import'./styles/components/courses/_components-card';
+@import'./styles/components/courses/_components-trainings';
+@import'./styles/components/courses/_components-instructions';
+@import'./styles/components/courses/_components-programs';
+@import'./styles/components/courses/_components-sertificates';
+@import'./styles/components/courses/_components-information';
 
 @import'./styles/utilities/_utilities-centered';
 

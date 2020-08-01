@@ -1,0 +1,48 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-program-wrapper {
+    background-color: #ff7100;
+    border: 1px solid #000000;
+    position: relative;
+}
+.c-program {
+    display: grid;
+    grid-template-rows: 325px 20px 335px;
+    align-items: center;
+    position: relative;
+    $arrow: url(./../../../assets/icons/grey-arrow.svg);
+    &__content__menu {
+        position: relative;
+        p {
+            background: #fff;
+            padding: 14px 56px 16px 14px;
+            border-radius: 5px;
+        }
+        $top: (32px, 98px, 174px, 258px);
+        @for $i from 1 through 4 {
+            p:nth-of-type(#{$i}):before {
+                content: $arrow;
+                position: absolute;
+                display: inline-block;
+                right: 20px;
+                top: nth($top, $i);
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        &:before {
+            content: url(./../../../assets/icons/book.svg);
+            position: absolute;
+            left: 0px;
+            top: 28px;
+        }
+    }
+    &__content h2 {
+        width: 80%;
+        padding-left: 55px;
+    }
+}

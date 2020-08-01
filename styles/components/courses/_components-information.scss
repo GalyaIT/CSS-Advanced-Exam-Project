@@ -1,0 +1,46 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-information {
+    display: grid;
+    grid-template-rows: 500px 500px;
+    position: relative;
+    grid-row-gap: 50px;
+    &:before {
+        content: url(./assets/images/horizontal-border.svg);
+        position: absolute;
+        left: 0;
+        top: 528px;
+    }
+    & h2 {
+        width: 82%;
+        padding-left: 45px;
+    }
+    & span {
+        font-weight: bold;
+    }
+    & a {
+        color: $secondary-800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__time {
+        position: relative;
+        &:before {
+            content: url(./../../../assets/icons/pink-clock.svg);
+            position: absolute;
+            left: 0;
+            top: 28px;
+        }
+    }
+    &__location {
+        position: relative;
+        &:before {
+            content: url(./../../../assets/icons/lightbulb.svg);
+            position: absolute;
+            left: 0;
+            top: 28px;
+        }
+    }
+}

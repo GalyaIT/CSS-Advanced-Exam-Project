@@ -1,0 +1,10 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-serificates{
+    @include for-phone-only{
+          display:none
+    } 
+  
+}

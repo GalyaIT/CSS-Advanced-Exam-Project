@@ -1,0 +1,26 @@
+@import "./../settings/_settings-colors.scss";
+@import "./../settings/_settings-breakpoints";
+@import "./../settings/settings-shadows";
+
+.c-header {
+    display: grid;
+    grid-template-rows: 70px 312px;
+    align-items: center;    
+    &__info {
+        background: $blue-400;
+        color: white;
+        text-align: center;
+        padding: 45px 0px;
+    }
+    &__label {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        background: $secondary-500;
+        box-shadow: $primary-shadow;
+        border-radius: 4px;
+        padding: 4px 8px;
+    }
+}

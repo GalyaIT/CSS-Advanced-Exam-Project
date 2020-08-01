@@ -1,0 +1,25 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-trainings {
+    display: grid;
+    grid-template-rows: 1fr 250px;
+    grid-row-gap: 30px;
+
+    &__video {
+        box-shadow: $primary-shadow;
+        border-radius: 12px;
+        min-width: 335px;
+        height: 190px;
+        position: relative;
+        &:before {
+            content: url("./../../../assets/icons/play.png");
+            position: absolute;
+            left: 52%;
+            top: 50%;
+            transform: translate(-77%, -39%);
+        }
+    }
+
+}

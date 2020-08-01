@@ -1,0 +1,92 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-card {
+    display: grid;
+    grid-template-rows: 150px 20px 1fr;
+    border-radius: 12px;
+    grid-template-columns: 1fr;    
+    position: relative;
+    top: -140px;
+    left: 0;
+    align-items: center;
+    height:560px;
+    &__holes {
+        position: relative;
+        margin: 0;
+        height: 21px;
+        background: radial-gradient(circle 12px, transparent, transparent 40%, #c4c4c4 60%, #fff 60%, #fff 100%) 55px 0px/19px 20px repeat-x;
+        top: -8px;
+        left: 0px
+    }
+    &__button {
+        background-color: #ffff;
+        padding: 46px 24px;
+        border-radius: 12px;
+        box-shadow: $primary-shadow;
+        text-align: center;
+    }
+    &__button button {
+        padding: 16px 94px;
+    }
+    &__content h4,
+    h5 {
+        margin: 0 45px;
+    }
+    h4 {
+        margin-top: 6px;
+        color: $secondary-800;
+    }
+    h5 {
+        color: $grey-700;
+    }
+    &__content {
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px;
+        // grid-template-rows: repeat(4, 150px);
+        grid-template-columns: 1fr;
+        justify-items: start;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: $primary-shadow;
+        position: relative;
+        top: -11px;
+    }
+    &__info {        
+        margin: 0 10px;
+        padding-left: 40px;
+        position: relative;
+        h4,
+        h5 {
+            margin: 0 45px;
+        }
+        h4 {
+            margin-top: 6px;
+            color: $secondary-800;
+        }
+        h5 {
+            color: $grey-700;
+        }
+    }
+    @each $item in money, people, calendar, location {
+        .#{$item}-icon:before {
+            content: url("./../../../assets/icons/#{$item}.svg");
+            position: absolute;
+            left: 24px;
+            top: 8px;
+        }
+    }
+    @each $item in money, people, calendar {
+        .#{$item}-icon:after {
+            content: " ";
+            background-color: $grey-100;
+            position: absolute;
+            left: 22px;
+            top: 100px;
+            height: 2px;
+            width: 20px;
+        }
+    }
+}
