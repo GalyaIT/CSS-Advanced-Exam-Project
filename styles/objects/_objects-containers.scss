@@ -1,6 +1,6 @@
 @import "./../settings/settings-colors";
 .o-container{
-    max-width: 1290px;
+    max-width: 1290px; 
     width: 100%;
     margin: 0 auto;
 }
@@ -8,10 +8,8 @@
    display:grid;
    grid-template-rows:390px 1fr 567px;
    grid-row-gap: 80px;
-}
-.o-main-wrapper {
-    display: grid;
-    grid-template-rows: 660px 880px 510px 750px 1100px;
-    grid-row-gap: 20px;
-    color: $grey-700;
+   width:100%;
+   @include for-desktop-up{
+    grid-template-rows:390px 1fr 312px;
+   }
 }

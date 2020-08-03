@@ -2,9 +2,46 @@
 @import "./../../settings/_settings-breakpoints";
 @import "./../../settings/settings-shadows";
 
-.c-serificates{
-    @include for-phone-only{
-          display:none
-    } 
-  
+.c-serificates-wrapper {
+    display: none;
+    @include for-desktop-up {
+        display: grid;
+        padding: 60px 50px;
+
+        .c-certificates {
+            display: grid;
+            grid-template-columns: 50% 40%;
+            grid-template-rows: 365px;
+            position: relative;
+            column-gap: 150px;
+            &__info{
+                position: relative;
+                &:before {
+                    content: url(./../../../assets/icons/sertificate-star.svg);
+                    position: absolute;
+                    left: -47px;
+                    top: 28px;
+                }
+            }
+            &__image {
+                max-width: 256px;
+                height: 365x;
+                position: relative;
+                justify-self: center;
+                &:before {
+                    content: "Снимка на сертификата";
+                    position: absolute;
+                    left: 16%;
+                    top: 22%;
+                    font-size: 18px;
+                    display: inline-block;
+                    width: 100%;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
 }

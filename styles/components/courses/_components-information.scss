@@ -4,18 +4,34 @@
 
 .c-information {
     display: grid;
-    grid-template-rows: 500px 500px;
+    grid-template-rows: 48% 48%;
     position: relative;
-    grid-row-gap: 50px;
+    row-gap: 50px;
+    @include for-desktop-up {
+        grid-template-columns: 47% 47%;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;     
+        justify-content: space-between;
+        padding-left: 50px;        
+    }
     &:before {
         content: url(./assets/images/horizontal-border.svg);
         position: absolute;
         left: 0;
         top: 528px;
+        @include for-desktop-up {
+            content: url(./../../../assets/images/vertical-border.svg);
+            position: absolute;
+            left: 49%;
+            top: 23px;
+        }
     }
     & h2 {
         width: 82%;
         padding-left: 45px;
+        @include for-desktop-up {
+           padding:0;  
+        }
     }
     & span {
         font-weight: bold;
@@ -32,6 +48,9 @@
             position: absolute;
             left: 0;
             top: 28px;
+            @include for-desktop-up {
+                left: -53px;               
+             }
         }
     }
     &__location {
@@ -41,6 +60,9 @@
             position: absolute;
             left: 0;
             top: 28px;
+            @include for-desktop-up {
+                left: -45px;               
+             }
         }
     }
 }

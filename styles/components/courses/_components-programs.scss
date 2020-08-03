@@ -6,13 +6,35 @@
     background-color: #ff7100;
     border: 1px solid #000000;
     position: relative;
+    @include for-desktop-up {
+        display: grid;
+        grid-template-columns: 1hr;
+        align-items: center;
+    }
 }
 .c-program {
     display: grid;
     grid-template-rows: 325px 20px 335px;
+    grid-template-columns: 1fr;
     align-items: center;
     position: relative;
     $arrow: url(./../../../assets/icons/grey-arrow.svg);
+    @include for-desktop-up {
+        grid-template-columns: 60%;
+        grid-template-rows: 1fr;
+        align-self: center;
+        padding-left: 50px;
+      
+        &:before {
+            @include for-desktop-up {
+                content: url(./../../../assets/images/program.svg);
+                position: absolute;
+                left: 66%;
+                top: 48%;
+                transform: scale(0.9);
+            }
+        }
+    }
     &__content__menu {
         position: relative;
         p {
@@ -20,7 +42,8 @@
             padding: 14px 56px 16px 14px;
             border-radius: 5px;
         }
-        $top: (32px, 98px, 174px, 258px);
+        $top: (10%, 30%, 54%, 82%);
+       
         @for $i from 1 through 4 {
             p:nth-of-type(#{$i}):before {
                 content: $arrow;
@@ -28,6 +51,14 @@
                 display: inline-block;
                 right: 20px;
                 top: nth($top, $i);
+            }
+        }
+        @include for-desktop-up {
+            $top: (11%, 35%, 58%, 82%);
+            @for $i from 1 through 4 {
+                p:nth-of-type(#{$i}):before {                   
+                    top: nth($top, $i);
+                }
             }
         }
     }
@@ -39,10 +70,16 @@
             position: absolute;
             left: 0px;
             top: 28px;
+            @include for-desktop-up {
+                left: -66px;
+            }
         }
     }
     &__content h2 {
         width: 80%;
         padding-left: 55px;
+        @include for-desktop-up {
+            padding: 0;
+        }
     }
 }

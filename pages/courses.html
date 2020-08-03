@@ -12,10 +12,10 @@
 
 <body>
     <div class="o-page-wrapper">
-        <header class="c-header">
+        <header class="c-header-wrapper">
             <div class="c-navbar">
                 <nav class="u-centered__container">
-                    <div class="c-navbar__wrapper o-container">
+                    <div class="c-navbar-wrapper o-container">
                         <article class="c-navbar__logo">
                             <img src="../assets/icons/logo.svg" alt="Softuni Logo">
                             <span>SoftUni Kids</span>
@@ -38,18 +38,19 @@
                             </li>
                         </ul>
                         <div class="c-nav-login">
-                            <img class="c-nav-login__search-image" src="../assets/icons/navigation-search.svg" alt="Search">
+                            <img class="c-nav-login__search-image" src="../assets/icons/navigation-search.svg"
+                                alt="Search">
                             <button class="c-btn c-btn--secondary">
                                 вход
                             </button>
                         </div>
-                        <span class="c-navbar-toggle">
+                        <span class="c-navbar__toggle">
                             <img src="../assets/icons/menu.svg" alt="Menu">
                         </span>
                     </div>
                 </nav>
             </div>
-            
+
             <section class="c-header__info">
                 <article class="centered u-centered__container middle">
                     <span class="c-header__label">
@@ -61,16 +62,16 @@
         </header>
 
         <main>
-            <div class="o-main-wrapper">
-                <section class="c-card-wrapper u-centered__container">
-                    <div class="o-container">
+            <div class="c-courses-main-wrapper">
+                <section class="c-card-wrapper ">
+                    <div class="o-container u-centered__container">
                         <article class="c-card">
                             <div class=c-card__button>
                                 <button class="c-btn c-btn--secondary c-btn-responsive">
                                     записване
                                 </button>
-                            </div>                          
-                            <div class="c-card__holes"></div>                        
+                            </div>
+                            <div class="c-card__holes"></div>
                             <section class="c-card__content">
                                 <div class="c-card__info money-icon">
                                     <h5>цена</h5>
@@ -93,8 +94,8 @@
                     </div>
                 </section>
                 <section class="c-trainings-wrapper">
-                    <div class="o-container">
-                        <article class="c-trainings u-centered__container">
+                    <div class="o-container u-centered__container">
+                        <article class="c-trainings ">
                             <div class="c-trainings__info">
                                 <p>Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е
                                     първият
@@ -146,7 +147,8 @@
                             </div>
                             <div class="c-instructions__discount puzzle-icon">
                                 <h2>Важно!</h2>
-                                <p>При записване на второ дете (братче/сестриче) получавате <span>20% отстъпка</span> от таксата за
+                                <p>При записване на второ дете (братче/сестриче) получавате <span>20% отстъпка</span> от
+                                    таксата за
                                     второто дете.</p>
                                 <p>Занятията стартират при сформиране на група.</p>
                             </div>
@@ -155,38 +157,53 @@
                 </section>
                 <section class="c-program-wrapper">
                     <div class="o-container ">
-                    <article class="c-program u-centered__container">                                     
-                        <div class="c-program__content">
-                            <h2>Програма на обучението</h2>
-                            <p>През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат
-                                възможност да
-                                ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се
-                                забавляваме
-                                докато учим как да прогамираме.</p>
-                        </div>
-                        <div>
-                            <p><strong>занятия</strong></p>
-                        </div>
-                        <div class="c-program__content__menu">
-                            <p>1. Цикли и безкрайни цикли</p>
-                            <p>2. Събития</p>
-                            <p>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</p>
-                            <p>4. Работа по финален проект и презентирането му.</p>
-                        </div>
-                        </div>
+                        <article class="c-program u-centered__container">
+                            <div class="c-program__content">
+                                <h2>Програма на обучението</h2>
+                                <p>През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще
+                                    имат
+                                    възможност да
+                                    ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще
+                                    се
+                                    забавляваме
+                                    докато учим как да прогамираме.</p>
+                            </div>
+                            <div>
+                                <p><strong>занятия</strong></p>
+                            </div>
+                            <div class="c-program__content__menu">
+                                <p>1. Цикли и безкрайни цикли</p>
+                                <p>2. Събития</p>
+                                <p>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</p>
+                                <p>4. Работа по финален проект и презентирането му.</p>
+                            </div>
+                    </div>
                     </article>
                 </section>
-                <section class="c-serificates">
-                    <h1>Сертификат </h1>
+                <section class="c-serificates-wrapper u-centered__container">
+                    <div class="o-container">
+                        <article class="c-certificates">
+                            <div class="c-certificates__info">
+                                <h2>Сертификат </h2>
+                                <p>Да се опише максимално подробно кога и къде се провеждат занятията. За примера съм
+                                    изпозлвал описание от онлайн курс</p>
+                            </div>
+                            <div class="c-certificates__image">
+                                <img src="./../assets/images/Rectangle 273.svg" alt="Sertificate">
+                            </div>
+                        </article>
+                    </div>
                 </section>
                 <section class="c-information-wrapper u-centered__container">
                     <div class="o-container">
                         <article class="c-information">
                             <div class="c-information__time time-icon">
                                 <h2> Кога и къде се провеждат занятията?</h2>
-                                <p> Да се опише максимално подробно <span>кога</span> и <span>къде</span> се провеждат занятията. За примера съм
+                                <p> Да се опише максимално подробно <span>кога</span> и <span>къде</span> се провеждат
+                                    занятията. За примера съм
                                     изпозлвал описание от онлайн курс</p>
-                                <p> Курсът е в <span>ОНЛАЙН ФОРМАТ.</span> Обучението се провежда в рамките на <span>2 астрономически часa</span>,
+                                <p> Курсът е в <span>ОНЛАЙН ФОРМАТ.</span> Обучението се провежда в рамките на <span>2
+                                        астрономически часa</span>,
                                     веднъж седмично в продължение на <span>4 седмици.</span></p>
                                 <p>Денят и часа зависят от групата, в която запишете детето си. Занятията ще се проведат
                                     в онлайн платформа, за която ще получите линк преди занятието, с който да достъпите
@@ -195,10 +212,14 @@
                             </div>
                             <div class="c-information__location bubble-icon">
                                 <h2>Допълнителна информация</h2>
-                                <p>В деня на първото занятие на вашето дете ще имаме нужда от <span>два подписани и попълнени екземпляра на договор за обучение</span> в SoftUni Kids. Ще получите договора на имейл
-                                    адреса ви, след заплащането на обучението. Може да го разгледате от <a href="#">тук.</a></p>
+                                <p>В деня на първото занятие на вашето дете ще имаме нужда от <span>два подписани и
+                                        попълнени екземпляра на договор за обучение</span> в SoftUni Kids. Ще получите
+                                    договора на имейл
+                                    адреса ви, след заплащането на обучението. Може да го разгледате от <a
+                                        href="#">тук.</a></p>
                                 <p>За успешното провеждане на занятията трябва да осигурите на детето си <span>компютър,
-                                    интернет връзка и спокойна среда за работа.</span> За по-лесна комуникация ще получите
+                                        интернет връзка и спокойна среда за работа.</span> За по-лесна комуникация ще
+                                    получите
                                     достъп до група в социалните мрежи, където преподавателите ще помагат на децата при
                                     затруднения в достъпа до виртуалната ни класна стая.</p>
                                 <p>Почивен ден за групите - няма.</p>
@@ -206,13 +227,12 @@
                             </div>
                         </article>
                     </div>
-                </section>             
+                </section>
             </div>
         </main>
         <footer class="c-footer">
             <div class="c-footer-wrapper u-centered__container">
-                <img class="c-footer__emoji" src="./../assets/images/footer-yellow-emoji.svg" alt="">
-                <div class="c-footer-navigation">
+                <img class="c-footer__emoji" src="./../assets/images/footer-yellow-emoji.svg" alt="">               
                     <div class="c-footer-kids-and-learning">
                         <section class="c-footer__section c-footer__section--softuni-kids">
                             <h5>Softuni Kids</h5>
@@ -224,7 +244,7 @@
                                     <li class="c-footer__navbar__item"><a href="#">Блог</a></li>
                                     <li class="c-footer__navbar__item"><a href="#">Контакти</a></li>
                                 </ul>
-                                <ul class="c-footer__navbar__items">
+                                <ul class="c-footer__navbar__items c-footer-half">
                                     <li class="c-footer__navbar__item"><a href="#">Общи условия</a></li>
                                     <li class="c-footer__navbar__item"><a href="#">Лични данни</a></li>
                                 </ul>
@@ -266,11 +286,10 @@
                             </nav>
                         </section>
                     </div>
-                </div>
-            </div>
-            <div class="c-footer-copy-right">
-                <p>	&copy; 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
-            </div>
+                    <div class="c-footer-copy-right">
+                        <p> &copy; 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
+                    </div>             
+            </div>          
         </footer>
     </div>
 </body>

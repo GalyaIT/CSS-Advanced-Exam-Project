@@ -6,19 +6,29 @@
     display: grid;
     grid-template-rows: 150px 20px 1fr;
     border-radius: 12px;
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;
     position: relative;
     top: -140px;
     left: 0;
     align-items: center;
-    height:560px;
+
+    @include for-desktop-up {
+        grid-template-columns: 290px 20px 1fr;
+        grid-template-rows: 112px;        
+    }
     &__holes {
         position: relative;
         margin: 0;
         height: 21px;
-        background: radial-gradient(circle 12px, transparent, transparent 40%, #c4c4c4 60%, #fff 60%, #fff 100%) 55px 0px/19px 20px repeat-x;
+        background: radial-gradient(circle 12px, transparent, transparent 40%, #c4c4c4 60%, #fff 60%, #fff 100%) 55px
+            0px/19px 20px repeat-x;
         top: -8px;
-        left: 0px
+        left: 0px;
+        @include for-desktop-up {
+           background: radial-gradient(circle 12px, transparent, transparent 40%, #C4C4C4 60%, #fff 63%, #fff 100%) 40px 33px/20px 21px repeat;
+           height: 110px;
+           top:1px;
+        }
     }
     &__button {
         background-color: #ffff;
@@ -26,9 +36,15 @@
         border-radius: 12px;
         box-shadow: $primary-shadow;
         text-align: center;
+        @include for-desktop-up {
+            padding: 32px 64px;
+        }
     }
     &__button button {
         padding: 16px 94px;
+        @include for-desktop-up {
+            padding: 14px 32px;
+        }
     }
     &__content h4,
     h5 {
@@ -53,14 +69,25 @@
         box-shadow: $primary-shadow;
         position: relative;
         top: -11px;
+        @include for-desktop-up {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 112px;
+            top: 0;
+            grid-column-gap: 10px;
+            padding-right: 80px;
+        }
     }
-    &__info {        
-        margin: 0 10px;
-        padding-left: 40px;
+    &__info {
+        margin: 0 70px;
+        // padding-left: 40px;
         position: relative;
+        @include for-desktop-up {
+            justify-self: end;
+            margin: 0 10px;
+        }
         h4,
         h5 {
-            margin: 0 45px;
+            margin: 0;
         }
         h4 {
             margin-top: 6px;
@@ -74,7 +101,7 @@
         .#{$item}-icon:before {
             content: url("./../../../assets/icons/#{$item}.svg");
             position: absolute;
-            left: 24px;
+            left: -50px;
             top: 8px;
         }
     }
@@ -83,10 +110,16 @@
             content: " ";
             background-color: $grey-100;
             position: absolute;
-            left: 22px;
+            left: -50px;
             top: 100px;
             height: 2px;
             width: 20px;
+            @include for-desktop-up {
+                top: 22px;
+                height: 20px;
+                width: 2px;
+                left: 135px;
+            }
         }
     }
 }

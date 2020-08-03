@@ -7,11 +7,36 @@
     grid-template-rows: 200px 200px;
     position: relative;
     grid-row-gap: 60px;
+   
+    @include for-desktop-up {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 1fr;
+        grid-column-gap: 110px;
+        justify-content: space-between;
+        padding-left: 50px;        
+    }
+    &::after {
+        content: url(./../../../assets/images/horizontal-border.svg);
+        position: absolute;
+        left: 0;
+        top: 52%;
+
+        @include for-desktop-up {
+            content: url(./../../../assets/images/border.svg);
+            position: absolute;
+            left: 49%;
+            top: 0;
+        }
+    }
     & h2 {
         width: 60%;
         padding-left: 50px;
+        @include for-desktop-up {
+            width: 100%;
+            padding: 0;
+        }
     }
-    & span{
+    & span {
         font-weight: bold;
     }
 
@@ -22,14 +47,13 @@
             position: absolute;
             left: 0px;
             top: 28px;
-        }
-        &::after {
-            content: url(./../../../assets/images/horizontal-border.svg);
-            position: absolute;
-            left: 0;
-            top: 235px;
+            @include for-desktop-up {
+                left: -53px;
+                top: 25px;
+            }
         }
     }
+
     &__discount {
         position: relative;
         &::before {
@@ -37,6 +61,11 @@
             position: absolute;
             left: 0px;
             top: 28px;
+            @include for-desktop-up {
+                content: url(./../../../assets/icons/puzzle.svg);
+                left: -58px;
+                top: -10px;
+            }
         }
     }
 }
