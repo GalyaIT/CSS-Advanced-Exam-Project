@@ -6,40 +6,40 @@
     display: none;
     @include for-desktop-up {
         display: grid;
-        padding: 60px 50px;
-
+        align-items: center;
         .c-certificates {
             display: grid;
             grid-template-columns: 50% 40%;
-            grid-template-rows: 365px;
             position: relative;
             column-gap: 150px;
-            &__info{
+            height: 100%;
+            &__info {
                 position: relative;
+                padding-left: 50px;
                 &:before {
                     content: url(./../../../assets/icons/sertificate-star.svg);
                     position: absolute;
-                    left: -47px;
+                    left: -6px;
                     top: 28px;
                 }
             }
             &__image {
-                max-width: 256px;
-                height: 365x;
                 position: relative;
                 justify-self: center;
-                &:before {
+                width: 363px;
+                height: 256px;              
+                &:before {                   
                     content: "Снимка на сертификата";
                     position: absolute;
-                    left: 16%;
-                    top: 22%;
+                    left: 50%;
+                    top: 50%;
                     font-size: 18px;
-                    display: inline-block;
-                    width: 100%;
+                    display: inline-block;                   
                     font-family: Lato;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 22px;
+                    transform: translate(-50%, -50%);
                 }
             }
         }

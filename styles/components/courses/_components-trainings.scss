@@ -2,6 +2,9 @@
 @import "./../../settings/_settings-breakpoints";
 @import "./../../settings/settings-shadows";
 
+.c-trainings-wrapper{
+    align-self: center;  
+}
 .c-trainings {
     display: grid;
     grid-template-rows: 1fr 250px;
@@ -9,7 +12,8 @@
     @include for-desktop-up {
         grid-template-columns: 1fr 440px;
         grid-template-rows: 1fr;  
-        grid-column-gap:110px;      
+        grid-column-gap:110px; 
+          
     }
     &__video {
         box-shadow: $primary-shadow;

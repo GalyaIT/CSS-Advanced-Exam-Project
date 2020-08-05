@@ -8,7 +8,7 @@
     position: relative;
     row-gap: 50px;
     @include for-desktop-up {
-        grid-template-columns: 47% 47%;
+        grid-template-columns:  44% 44%;
         -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;     
         justify-content: space-between;
@@ -22,7 +22,7 @@
         @include for-desktop-up {
             content: url(./../../../assets/images/vertical-border.svg);
             position: absolute;
-            left: 49%;
+            left: 50%;
             top: 23px;
         }
     }

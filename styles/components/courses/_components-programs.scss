@@ -3,7 +3,7 @@
 @import "./../../settings/settings-shadows";
 
 .c-program-wrapper {
-    background-color: #ff7100;
+    background-color: $secondary-500;
     border: 1px solid #000000;
     position: relative;
     @include for-desktop-up {

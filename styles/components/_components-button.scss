@@ -14,15 +14,28 @@
     &--secondary {
         background: $secondary-800;
         color: #fff;
-    }  
-    &--lg {     
+    }
+    &--lg {
         font-size: 16px;
         line-height: 20px;
         padding: 14px 32px;
     }
-    &--responsive{
+    &--responsive {
         font-size: 16px;
         line-height: 20px;
         padding: 16px 94px;
+    }
+}
+.text-like {
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
     }
 }

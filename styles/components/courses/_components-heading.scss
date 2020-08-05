@@ -1,0 +1,32 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+
+.c-main-heading {
+    background: $blue-400;
+    color: white;
+    text-align: center;
+    padding: 45px 0px;
+    @include for-desktop-up {       
+        display: grid;      
+        grid-template-columns: 1fr 640px 1fr;      
+        height: 100%;
+        .middle {
+            grid-column: 2;
+            align-self: center;
+        }
+    }
+ 
+}
+.c-main-heading__label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    background: $secondary-500;
+    box-shadow: $primary-shadow;
+    border-radius: 4px;
+    padding: 4px 8px;
+}

@@ -13,7 +13,9 @@
         grid-template-rows: 1fr;
         grid-column-gap: 110px;
         justify-content: space-between;
-        padding-left: 50px;        
+        padding-left: 50px;  
+        margin-bottom:60px;
+           
     }
     &::after {
         content: url(./../../../assets/images/horizontal-border.svg);

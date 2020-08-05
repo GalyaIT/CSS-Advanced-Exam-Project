@@ -1,4 +1,4 @@
-@import "./../settings/settings-colors";
+
 .o-container{
     max-width: 1290px; 
     width: 100%;
@@ -6,10 +6,10 @@
 }
 .o-page-wrapper{  
    display:grid;
-   grid-template-rows:390px 1fr 567px;
-   grid-row-gap: 80px;
+   grid-template-rows:72px 1fr 555px;
+   grid-row-gap: 5px;
    width:100%;
    @include for-desktop-up{
-    grid-template-rows:390px 1fr 312px;
+    grid-template-rows:74px 1fr 312px;
    }
 }
