@@ -18,13 +18,13 @@
            
     }
     &::after {
-        content: url(./../../../assets/images/horizontal-border.svg);
+        content: url(./assets/images/horizontal-border.svg);
         position: absolute;
         left: 0;
         top: 52%;
 
         @include for-desktop-up {
-            content: url(./../../../assets/images/border.svg);
+            content: url(./assets/images/border.svg);
             position: absolute;
             left: 49%;
             top: 0;
@@ -45,7 +45,7 @@
     &__people {
         position: relative;
         &::before {
-            content: url(./../../../assets/icons/people.svg);
+            content: url(./assets/icons/people.svg);
             position: absolute;
             left: 0px;
             top: 28px;
@@ -59,12 +59,12 @@
     &__discount {
         position: relative;
         &::before {
-            content: url(./../../../assets/icons/bell.svg);
+            content: url(./assets/icons/bell.svg);
             position: absolute;
             left: 0px;
             top: 28px;
             @include for-desktop-up {
-                content: url(./../../../assets/icons/puzzle.svg);
+                content: url(./assets/icons/puzzle.svg);
                 left: -58px;
                 top: -10px;
             }

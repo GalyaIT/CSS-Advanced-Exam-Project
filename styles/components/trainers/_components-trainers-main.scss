@@ -1,0 +1,12 @@
+.c-trainers-main-wrapper{
+    display: grid;
+    grid-template-rows: 356px 1488px 1360px 662px;
+    grid-template-columns: 1fr;
+    // row-gap: 20px;
+    color: $grey-700;
+    @include for-desktop-up {
+        grid-template-rows: 256px 548px 1472px 400px;
+        row-gap: 5px;
+        align-items: center;
+    }    
+}

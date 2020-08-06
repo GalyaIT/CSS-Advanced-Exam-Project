@@ -1,0 +1,36 @@
+@import "./../../settings/_settings-breakpoints";
+.c-trainers-wrapper {
+    position: relative;
+    height: 100%;
+    #content-desktop {
+        display: none;
+    }
+    @include for-desktop-up {
+        #content-mobile {
+            display: none;
+        }
+        display: grid;
+        justify-self: center;
+        align-items: center;
+        #content-desktop {
+            display: grid;
+            grid-template-columns: max-content max-content max-content max-content;
+            grid-template-rows: 260px 260px 260px 260px;
+            row-gap: 72px;
+            column-gap: 60px;
+            align-items: center;
+            width: 1064px;
+            justify-items: center;
+        }
+    }
+    &:before {
+        content: url(./assets/images/primary-horizontal-border.svg);
+        position: absolute;
+        @include for-desktop-up {
+            content: url(./assets/images/primary-horizontal-line-long.svg);
+            position: absolute;
+            top: 0;
+            left: -10%;
+        }       
+    }
+}

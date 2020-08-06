@@ -1,0 +1,11 @@
+.c-managers-wrapper{ 
+    .o-container{
+        display: grid;  
+        @include for-desktop-up {
+            grid-template-columns:  49% 49%;            
+            // justify-content: space-between;
+            // padding-left: 50px;        
+        }
+    }
+   
+}

@@ -1,0 +1,15 @@
+.c-contacts-main-wrapper{
+    display: grid;
+    grid-template-rows: 660px 1000px 800px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    color: $grey-700;
+    @include for-desktop-up {
+        grid-template-rows: 500px 686px 572px;
+        row-gap: 5px;
+    } 
+}
+.c-map-section__image{
+    width:375px;
+    height: 660px;
+}

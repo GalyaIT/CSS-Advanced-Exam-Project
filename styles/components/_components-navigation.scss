@@ -18,7 +18,7 @@
         align-items: center;
         justify-self: start;
     }
-    .text-like--btn-arrow {
+    .text-like {
         color: $grey-700;
         @include for-desktop-up {
             color: $secondary-800;

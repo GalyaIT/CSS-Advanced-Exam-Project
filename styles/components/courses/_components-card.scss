@@ -40,8 +40,7 @@
             padding: 32px 64px;
         }
     }
-    &__button button {
-        padding: 16px 94px;
+    &__button button {        
         @include for-desktop-up {
             padding: 14px 32px;
         }
@@ -99,7 +98,7 @@
     }
     @each $item in money, people, calendar, location {
         .#{$item}-icon:before {
-            content: url("./../../../assets/icons/#{$item}.svg");
+            content: url("./assets/icons/#{$item}.svg");
             position: absolute;
             left: -50px;
             top: 8px;

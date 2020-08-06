@@ -1,0 +1,96 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-trainers-section-contacts-wrapper {
+    background-color: $blue-300;
+    color: $white;
+    & h3,
+    p {
+        margin: 0;
+    }
+
+    &:before {
+        content: "";
+        background-color: $blue-200;
+        width: 100%;
+        height: 12px;
+        position: absolute;
+    }
+    // grid-template-rows: 124px 152px 228px 172px;
+    .o-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 276px 400px;
+        @include for-desktop-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 200px;
+        }
+    }
+}
+.c-trainers-section-contacts__content {
+    display: grid;
+    grid-row: 1 / 2;
+    align-self: center;
+    row-gap: 24px;
+    @include for-desktop-up {
+        grid-template-columns: 1fr 850px 1fr;
+        grid-template-rows: 44px 40px;
+    }
+    & h3 {
+        grid-row: 1 / 2;
+        margin: 0;
+        @include for-desktop-up {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+    & p {
+        grid-row: 3 /4;
+        margin: 0;
+        @include for-desktop-up {
+            grid-column: 2 /3;
+            grid-row: 2/3;
+            text-align: center;
+        }
+    }
+}
+.c-trainers-section-contacts__form {
+    display: grid;
+    grid-template-rows: 55px 55px 55px 48px;
+    grid-row: 2 /3;
+    align-self: center;
+    row-gap: 36px;
+    align-self: start;
+    @include for-desktop-up {
+        grid-template-columns: 228px 228px 228px max-content;
+        grid-template-rows: auto;
+        column-gap: 32px;
+        justify-self: center;
+    }
+    & input {
+        height: 55px;
+        background-color: $blue-300;
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+    }
+    & input::placeholder {
+        color: $white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 16px;
+    }
+    @include for-desktop-up {
+        & button {
+            padding: 14px 32px;
+            margin-left: 16px;
+        }
+    }
+}

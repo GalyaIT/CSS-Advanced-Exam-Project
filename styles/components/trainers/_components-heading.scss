@@ -1,0 +1,21 @@
+.c-trainers-main-wrapper{
+    // align-items: center;
+    .c-main-heading {
+        background: $secondary-600;
+        color: white;
+        text-align: center;
+        padding: 45px 0px;
+        @include for-desktop-up {       
+            display: grid;      
+            grid-template-columns: 1fr 850px 1fr;      
+            height: 100%;
+            padding:0;
+            .middle {
+                grid-column: 2;
+              
+            }
+        }
+     
+    }
+}
+

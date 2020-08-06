@@ -20,7 +20,7 @@
         left: 0;
         top: 528px;
         @include for-desktop-up {
-            content: url(./../../../assets/images/vertical-border.svg);
+            content: url(./assets/images/vertical-border.svg);
             position: absolute;
             left: 50%;
             top: 23px;
@@ -44,7 +44,7 @@
     &__time {
         position: relative;
         &:before {
-            content: url(./../../../assets/icons/pink-clock.svg);
+            content: url(./assets/icons/pink-clock.svg);
             position: absolute;
             left: 0;
             top: 28px;
@@ -56,7 +56,7 @@
     &__location {
         position: relative;
         &:before {
-            content: url(./../../../assets/icons/lightbulb.svg);
+            content: url(./assets/icons/lightbulb.svg);
             position: absolute;
             left: 0;
             top: 28px;
