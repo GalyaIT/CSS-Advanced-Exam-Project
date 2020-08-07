@@ -1,0 +1,19 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-contacts-section-location-wrapper{
+    align-self: center;
+    justify-self: center;
+}
+
+.c-contacts-section-location{
+    display:grid;
+    grid-template-rows: 100px max-content;
+    grid-template-columns: 320px;
+    row-gap: 10px;
+   
+    h2,h3{
+        color:$primary-300; 
+    }
+}

@@ -381,6 +381,16 @@ img {
   padding: 16px 94px;
 }
 
+.c-btn--outline {
+  background: #ffff;
+  color: #ff9100;
+  border: 1px solid #ff9100;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .text-like {
   padding: 0;
   border: 0;
@@ -1974,11 +1984,11 @@ img {
 .c-contacts-main-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 660px 1000px 800px;
-      grid-template-rows: 660px 1000px 800px;
+  -ms-grid-rows: 120px 650px 600px 900px;
+      grid-template-rows: 120px 650px 600px 900px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  row-gap: 20px;
+  row-gap: 5px;
   color: #565656;
 }
 
@@ -1990,9 +2000,213 @@ img {
   }
 }
 
-.c-map-section__image {
+.c-contacts-map-section__image {
   width: 375px;
-  height: 660px;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .c-contacts-map-section__image {
+    width: 1440px;
+    height: 100%;
+  }
+}
+
+.c-contacts-map-section__image img {
+  width: 100%;
+  height: auto;
+}
+
+.c-contacts-address-card-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-contacts-address-card {
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: max-content max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content max-content;
+  row-gap: 5px;
+}
+
+.c-contacts-address-card__working-time {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px max-content;
+      grid-template-rows: 50px -webkit-max-content;
+      grid-template-rows: 50px max-content;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 20px;
+}
+
+.c-contacts-address-card__working-time-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 40%;
+      grid-template-columns: 49% 40%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.c-contacts-address-card h4 {
+  color: #41bead;
+}
+
+.c-contacts-address-card p {
+  color: #565656;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.c-contacts-address-card p.time {
+  color: #ff9100;
+}
+
+.c-contacts-address-card button {
+  max-width: 250px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 10px 0;
+}
+
+.c-contacts-section-form-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.c-contacts-section-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 600px;
+      grid-template-rows: 60px 600px;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  row-gap: 32px;
+}
+
+.c-contacts-section-form h2 {
+  color: #41bead;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-contacts-section-form__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 50px 190px 50px;
+      grid-template-rows: 50px 50px 190px 50px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 /3;
+  -ms-grid-row-align: center;
+      align-self: center;
+  row-gap: 30px;
+  -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.c-contacts-section-form__form textarea,
+.c-contacts-section-form__form input {
+  border: 1px solid #919191;
+  border-radius: 6px;
+  max-width: 300px;
+  outline: none;
+}
+
+.c-contacts-section-form__form textarea {
+  resize: none;
+}
+
+.c-contacts-section-form__form input,
+.c-contacts-section-form__form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+}
+
+.c-contacts-section-form__form input,
+.c-contacts-section-form__form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+}
+
+.c-contacts-section-form__form input,
+.c-contacts-section-form__form textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+}
+
+.c-contacts-section-form__form input,
+.c-contacts-section-form__form textarea::placeholder {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+}
+
+.c-contacts-section-form__form p {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.c-contacts-section-location-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.c-contacts-section-location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px max-content;
+      grid-template-rows: 100px -webkit-max-content;
+      grid-template-rows: 100px max-content;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  row-gap: 10px;
+}
+
+.c-contacts-section-location h2, .c-contacts-section-location h3 {
+  color: #41bead;
 }
 
 .u-centered {

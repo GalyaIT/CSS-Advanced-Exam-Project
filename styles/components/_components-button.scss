@@ -25,6 +25,15 @@
         line-height: 20px;
         padding: 16px 94px;
     }
+    &--outline {
+        background: #ffff;
+        color: $secondary-800;
+        border: 1px solid $secondary-800;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px; 
+    }
 }
 .text-like {
     padding: 0;

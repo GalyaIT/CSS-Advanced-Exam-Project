@@ -5,7 +5,7 @@
 .c-trainers-section-contacts-wrapper {
     background-color: $blue-300;
     color: $white;
-    & h3,
+    h3,
     p {
         margin: 0;
     }
@@ -17,7 +17,7 @@
         height: 12px;
         position: absolute;
     }
-    // grid-template-rows: 124px 152px 228px 172px;
+ 
     .o-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -37,7 +37,7 @@
         grid-template-columns: 1fr 850px 1fr;
         grid-template-rows: 44px 40px;
     }
-    & h3 {
+    h3 {
         grid-row: 1 / 2;
         margin: 0;
         @include for-desktop-up {
@@ -50,7 +50,7 @@
             line-height: 44px;
         }
     }
-    & p {
+    p {
         grid-row: 3 /4;
         margin: 0;
         @include for-desktop-up {
@@ -73,13 +73,13 @@
         column-gap: 32px;
         justify-self: center;
     }
-    & input {
+    input {
         height: 55px;
         background-color: $blue-300;
         border: 1px solid #ffffff;
         border-radius: 6px;
     }
-    & input::placeholder {
+    input::placeholder {
         color: $white;
         font-style: normal;
         font-weight: normal;
@@ -88,7 +88,7 @@
         padding-left: 16px;
     }
     @include for-desktop-up {
-        & button {
+        button {
             padding: 14px 32px;
             margin-left: 16px;
         }

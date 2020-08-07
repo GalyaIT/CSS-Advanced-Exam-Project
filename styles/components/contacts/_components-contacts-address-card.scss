@@ -1,0 +1,49 @@
+@import "./../../settings/settings-colors";
+@import "./../../settings/_settings-breakpoints";
+@import "./../../settings/settings-shadows";
+
+.c-contacts-address-card-wrapper {
+    align-self: center;
+}
+.c-contacts-address-card {
+    box-shadow: $primary-shadow;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: max-content max-content max-content max-content;
+    row-gap: 5px;
+    &__working-time {
+        display: grid;
+        grid-template-rows: 50px max-content;
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+    &__working-time-block {
+        display: grid;
+        grid-template-columns: 49% 40%;
+        grid-template-rows: 1fr;
+        column-gap: 5px;
+    }
+    h4 {
+        color: $primary-300;
+    }
+    p {
+        color: $grey-700;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    p.time {
+        color: $secondary-800;
+    }
+    button{
+        max-width:250px;
+        justify-self: center;
+        margin: 10px 0;
+    }
+}
