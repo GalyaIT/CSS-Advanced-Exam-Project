@@ -46,9 +46,9 @@
             height: 400px;
             position: absolute;
             top: -23%;
-            left: 4%;
+            left: 0%;
         }
-    }   
+    }
     .c-footer-wrapper {
         display: -ms-grid;
         display: grid;
@@ -62,6 +62,7 @@
         grid-template-columns: 170px 179px;
         @include for-desktop-up {
             display: grid;
+            position:relative;
             padding-top: 65px;
             // grid-template-columns: 282px 207px 208px 180px;
             grid-template-columns: 28% 20% 20% 19%;
@@ -97,7 +98,7 @@
         line-height: 19px;
         color: $grey-200;
         opacity: 0.4;
-        padding: 32px 60px 32px 60px;    
+        padding: 32px 60px 32px 60px;
         position: relative;
         @include for-desktop-up {
             grid-column: 4 /5;
@@ -112,17 +113,17 @@
             height: 2px;
             top: 3px;
             left: 4px;
-            position: absolute;       
-            &:before {
+            position: absolute;
+            @include for-desktop-up {
                 display: none;
             }
         }
     }
-   
+
     .c-footer-copy-right p {
         margin: 0;
         text-align: center;
-        @include for-desktop-up{
+        @include for-desktop-up {
             text-align: left;
         }
     }
@@ -149,14 +150,14 @@
             grid-row: 1 / 2;
             margin-top: 0;
         }
-    }    
+    }
 }
 
-@include for-desktop-up {   
-    .c-footer__section--found-us {      
-            grid-column: 3 / 6;
-            grid-row: 1 / 2;
-            align-self: flex-start;       
+@include for-desktop-up {
+    .c-footer__section--found-us {
+        grid-column: 3 / 6;
+        grid-row: 1 / 2;
+        align-self: flex-start;
     }
     .c-footer__navbar--softuni-kids {
         display: grid;
@@ -169,27 +170,3 @@
         margin: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

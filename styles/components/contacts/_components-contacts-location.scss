@@ -2,17 +2,38 @@
 @import "./../../settings/_settings-breakpoints";
 @import "./../../settings/settings-shadows";
 
-.c-contacts-section-location-wrapper{  
-    justify-self: center;
+.c-contacts-section-location-wrapper {
+    background-color: $secondary-50;
+    @include for-desktop-up {
+        display: grid;
+        grid-template-columns: 1440px;
+        grid-template-rows: 572px;
+        align-items: center;
+    }
 }
 
-.c-contacts-section-location{
-    display:grid;
+.c-contacts-section-location {
+    display: grid;
     grid-template-rows: 100px max-content;
     grid-template-columns: 320px;
-    row-gap: 10px;
-   
-    h2,h3{
-        color:$primary-300; 
+    row-gap: 5px;
+    justify-content: center;
+    @include for-desktop-up {
+        grid-template-rows: 60px 330px;
+        grid-template-columns: 1290px;
+        align-items: center;
+        h2 {
+            text-align: center;
+        }
+        &__instruction {
+            display: grid;
+            grid-template-columns: 409px 407px 395px;
+            grid-template-rows: 330px;
+            justify-content: space-between;
+        }
+    }
+    h2,
+    h3 {
+        color: $primary-300;
     }
 }

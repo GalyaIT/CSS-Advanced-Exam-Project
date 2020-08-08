@@ -1,6 +1,6 @@
 @import './styles/generic/_generic-normalize';
 
-@import './styles/settings/_settings-typography';
+
 @import './styles/settings/_settings-colors';
 @import './styles/settings/_settings-breakpoints';
 @import'./styles/settings/settings-shadows';
@@ -9,6 +9,8 @@
 
 @import'./styles/elements/_elements-image';
 @import'./styles/elements/_elements-links';
+@import'./styles/elements/elements-typography';
+
 
 @import'./styles/components/_components-button';
 @import'./styles/components/_components-header';
