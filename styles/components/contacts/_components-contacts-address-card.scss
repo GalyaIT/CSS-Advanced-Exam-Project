@@ -4,10 +4,16 @@
 
 .c-contacts-address-card-wrapper {
     align-self: center;
-}
-.c-contacts-address-card {
     box-shadow: $primary-shadow;
     border-radius: 12px;
+    @include for-desktop-up {
+       position: absolute;
+       top:10%;
+       left:10%;
+       background-color: #ffff;
+    } 
+}
+.c-contacts-address-card {  
     padding-left: 10px;
     padding-bottom: 30px;
     height: 100%;

@@ -3,14 +3,14 @@
 @import "./../../settings/settings-shadows";
 
 .c-contacts-section-form-wrapper {
-    align-self: center;
+   
     justify-self: center;
 }
 
 .c-contacts-section-form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 600px;
+    grid-template-rows: 60px 500px;
     grid-template-columns: 300px;
     row-gap: 32px;
     h2 {

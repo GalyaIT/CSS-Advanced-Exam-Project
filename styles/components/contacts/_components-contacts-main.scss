@@ -1,6 +1,6 @@
 .c-contacts-main-wrapper{
     display: grid;
-    grid-template-rows: 120px 650px 600px 900px;
+    grid-template-rows: 300px 650px 600px 900px;
     grid-template-columns: 1fr;
     row-gap: 5px;
     color: $grey-700;
@@ -9,16 +9,4 @@
         row-gap: 5px;
     } 
 }
-.c-contacts-map-section__image{
-   width:375px;
-    height: 100%;
-    @include for-desktop-up{
-        width:1440px;
-    height: 100%;
-    }
-    img{
-        width: 100%;
-      
-        height: auto;
-    }
-}
+

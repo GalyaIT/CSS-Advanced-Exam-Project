@@ -1984,8 +1984,8 @@ img {
 .c-contacts-main-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 120px 650px 600px 900px;
-      grid-template-rows: 120px 650px 600px 900px;
+  -ms-grid-rows: 300px 650px 600px 900px;
+      grid-template-rows: 300px 650px 600px 900px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   row-gap: 5px;
@@ -2000,33 +2000,25 @@ img {
   }
 }
 
-.c-contacts-map-section__image {
-  width: 375px;
-  height: 100%;
-}
-
-@media (min-width: 1200px) {
-  .c-contacts-map-section__image {
-    width: 1440px;
-    height: 100%;
-  }
-}
-
-.c-contacts-map-section__image img {
-  width: 100%;
-  height: auto;
-}
-
 .c-contacts-address-card-wrapper {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.c-contacts-address-card {
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 12px;
+}
+
+@media (min-width: 1200px) {
+  .c-contacts-address-card-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: #ffff;
+  }
+}
+
+.c-contacts-address-card {
   padding-left: 10px;
   padding-bottom: 30px;
   height: 100%;
@@ -2087,9 +2079,6 @@ img {
 }
 
 .c-contacts-section-form-wrapper {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -2099,8 +2088,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 60px 600px;
-      grid-template-rows: 60px 600px;
+  -ms-grid-rows: 60px 500px;
+      grid-template-rows: 60px 500px;
   -ms-grid-columns: 300px;
       grid-template-columns: 300px;
   row-gap: 32px;
@@ -2187,9 +2176,6 @@ img {
 }
 
 .c-contacts-section-location-wrapper {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -2207,6 +2193,22 @@ img {
 
 .c-contacts-section-location h2, .c-contacts-section-location h3 {
   color: #41bead;
+}
+
+.c-contacts-map-section-wrapper {
+  position: relative;
+}
+
+.c-contacts-map-section-wrapper:before {
+  content: "";
+  background: url(./assets/images/Map.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .u-centered {

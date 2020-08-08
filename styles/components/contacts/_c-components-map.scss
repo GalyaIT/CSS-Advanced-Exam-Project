@@ -1,0 +1,14 @@
+.c-contacts-map-section-wrapper{
+    position: relative;  
+    &:before{
+        content: "";
+        background: url(./assets/images/Map.svg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;     
+    }
+}
