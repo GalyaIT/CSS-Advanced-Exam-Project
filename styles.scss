@@ -3,13 +3,14 @@
 
 @import './styles/settings/_settings-colors';
 @import './styles/settings/_settings-breakpoints';
-@import'./styles/settings/settings-shadows';
+@import'./styles/settings/_settings-shadows';
+@import'./styles/settings/_settings-animation';
 
 @import'./styles/objects/_objects-containers';
 
 @import'./styles/elements/_elements-image';
 @import'./styles/elements/_elements-links';
-@import'./styles/elements/elements-typography';
+@import'./styles/elements/_elements-typography';
 
 
 @import'./styles/components/_components-button';
@@ -17,28 +18,28 @@
 @import'./styles/components/_components-navigation';
 @import'./styles/components/_components-footer';
 
-@import'./styles/components/courses/components-courses-main';
+@import'./styles/components/courses/_components-courses-main';
 @import'./styles/components/courses/_components-card';
 @import'./styles/components/courses/_components-trainings';
 @import'./styles/components/courses/_components-instructions';
 @import'./styles/components/courses/_components-programs';
 @import'./styles/components/courses/_components-sertificates';
 @import'./styles/components/courses/_components-information';
-@import'./styles/components/courses/components-heading';
+@import'./styles/components/courses/_components-heading';
 @import'./styles/components/trainers/_components-heading';
-@import'./styles/components/trainers/components-trainers-main';
-@import'./styles/components/trainers/components-card-info';
-@import'./styles/components/trainers/components-managers';
-@import'./styles/components/trainers/components-trainers';
-@import'./styles/components/trainers/components-contact-form';
+@import'./styles/components/trainers/_components-trainers-main';
+@import'./styles/components/trainers/_components-card-info';
+@import'./styles/components/trainers/_components-managers';
+@import'./styles/components/trainers/_components-trainers';
+@import'./styles/components/trainers/_components-contact-form';
 
-@import'./styles/components/contacts/components-contacts-main';
-@import'./styles/components/contacts/components-contacts-address-card';
-@import'./styles/components/contacts/components-contacts-form';
-@import'./styles/components/contacts/components-contacts-location';
-@import'./styles/components/contacts/c-components-map';
+@import'./styles/components/contacts/_components-contacts-main';
+@import'./styles/components/contacts/_components-contacts-address-card';
+@import'./styles/components/contacts/_components-contacts-form';
+@import'./styles/components/contacts/_components-contacts-location';
+@import'./styles/components/contacts/_components-map';
 
 @import'./styles/utilities/_utilities-centered';
-
+@import'./styles/utilities/utilities-animation';
 
 

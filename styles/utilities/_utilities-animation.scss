@@ -1,0 +1,12 @@
+.u-fade-in {
+    opacity: 0;
+    animation: fade-in 3s forwards 1 ease-out;
+
+    $i:100;
+    @while $i < 2100{
+        &--delay-#{$i}{
+            animation-delay: #{$i}ms;
+        }
+        $i: $i+100;
+    }
+}
