@@ -9,7 +9,7 @@
         align-items: center;
         .c-certificates {
             display: grid;
-            grid-template-columns: 50% 40%;
+            grid-template-columns: 47% 40%;
             position: relative;
             column-gap: 150px;
             height: 100%;
@@ -31,7 +31,7 @@
                 &:before {                   
                     content: "Снимка на сертификата";
                     position: absolute;
-                    left: 50%;
+                    left: 44%;
                     top: 50%;
                     font-size: 18px;
                     display: inline-block;                   
@@ -39,7 +39,7 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 22px;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-44%, -50%);
                 }
             }
         }

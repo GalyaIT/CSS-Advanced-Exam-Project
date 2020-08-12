@@ -2,12 +2,9 @@
 @import "./../settings/_settings-breakpoints";
 @import "./../settings/settings-shadows";
 
-.c-footer {
+.c-footer-wrapper {
     background-color: $grey-700;
     position: relative;
-    &__emoji {
-        display: none;
-    }
     &:before {
         content: "";
         background-color: $grey-500;
@@ -17,153 +14,159 @@
         left: 0;
         position: absolute;
     }
-    & h5 {
-        margin-bottom: 0;
-     
-        color: $white;
-    }
-    &__navbar__items {
-        padding: 0;
-    }
-    &__navbar__item {
-        list-style: none;
-        margin: 12px 0;
-    }
-    &__navbar__item a {
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 19px;
-        color: $grey-200;
-        font-weight: normal;
-        transition: color 0.5s ease-out;
-    }
-    &__navbar__item a:hover {
-        cursor: pointer;
-        color: $primary-300;
-    }
-    &__emoji {
-        display: none;
-        @include for-desktop-up {
-            display: inline-block;
-            width: 220px;
-            height: 403px;
-            position: absolute;
-            top: -29%;
-            left: 0%;
-        }
-    }
-}
-.c-footer-wrapper {
-    display: grid;
-    grid-template-columns: 155px 180px;
-    grid-template-rows: 300px 100px 120px;
-    align-content: center;
-    height: 100%;
-    column-gap: 5px;
-    .c-footer-kids-section {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .c-footer__section--all-learning {
-        grid-template-columns: 1/2;
-        grid-row: 2/3;
-        align-self: start;
-        h5{
-            margin-top: 0;
-        }
-    }
-    .c-footer__section--all-initiatives {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .c-footer__section--found-us {
-        grid-column: 2/3;
-        grid-row:1/2;
-        align-self: end;
-    }
-    @include for-desktop-up {
-        grid-template-columns: 256px 170px 180px 180px;
-        grid-template-rows: 256px;
-        column-gap: 75px;
-        justify-content: end;
-        position: relative;
-        .c-footer-kids-section {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }      
-        .c-footer__navbar--softuni-kids {
-            display: grid;
-            grid-template-columns: 123px 109px;
-            column-gap: 24px;
-        }
-        .c-footer__section--all-learning {
-            display: grid;
-            row-gap: 5px;
-            grid-template-columns: 2/3;
-            grid-row: 1/2;
-            h5{
-                margin-top: 30px;
-            }
-        }
-        .c-footer__section--all-initiatives {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-            display: grid;
-            grid-template-rows: 50px max-content;
-            row-gap: 5px;
-        }
-        .c-footer__section--found-us {           
-            grid-column: 4/5;
-            grid-row: 1/3;
-            align-self: start;
-            display: grid;
-            row-gap: 1px;
-        }
-    }
-}
-.c-footer-copy-right {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    font-size: 16px;
-    line-height: 19px;
-    color: $grey-200;
-    opacity: 0.4;
-    text-align: center;
-    align-self: end;
-    position: relative;
-    @include for-desktop-up {
-           
-        grid-column: 4 /5;
-        grid-row: 1 / 3;        
-        align-self: end;
-        padding-bottom: 50px;
-        text-align: left;
-    }
-    &:before {
-        content: "";
-        background-color: $grey-600;
-        width: 100%;
-        height: 2px;
-        top: -20px;
-        left: 4px;
-        position: absolute;
-        @include for-desktop-up {
+    .c-footer {
+        display: grid;
+        grid-template-columns: 46% 52%;
+        grid-template-rows: 300px 100px 120px;
+        align-content: center;
+        height: 100%;
+        column-gap: 5px;
+        &__emoji {
             display: none;
         }
+
+        & h5 {
+            margin-bottom: 0;
+            color: $white;
+        }
+        &__navbar__items {
+            padding: 0;
+            margin:0;
+        }
+        &__navbar__item {
+            list-style: none;
+            margin: 12px 0;
+        }
+        &__navbar__item a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-200;
+            font-weight: normal;
+            transition: color 0.5s ease-out;
+        }
+        &__navbar__item a:hover {
+            cursor: pointer;
+            color: $primary-300;
+        }
+        &__emoji {
+            display: none;
+            @include for-desktop-up {
+                display: inline-block;
+                width: 220px;
+                height: 403px;
+                position: absolute;
+                top: -29%;
+                left: 0%;
+            }
+        }
+        &-kids-section {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &__section--all-learning {
+           grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: start;
+            h5 {
+                margin-top: 0;
+            }
+        }
+        &__section--all-initiatives {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        &__section--found-us {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            align-self: end;
+        }
+        @include for-desktop-up {
+            // grid-template-columns: 256px 170px 180px 180px;
+            grid-template-columns: 23% 15% 16% 14%;
+            grid-template-rows: 256px;
+            column-gap: 3%;
+            justify-content: end;
+            position: relative;      
+                 
+            &__section--softuni-kids{
+                display:grid;
+                grid-template-rows: 50px 1fr;
+                row-gap: 5px;
+            }
+            &__navbar--softuni-kids {
+                display: grid;
+                grid-template-columns: max-content max-content;
+                column-gap: 24px;                
+            }    
+            &__section--all-learning {
+                display: grid;
+                row-gap: 5px;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                h5 {
+                    margin-top: 30px;
+                }
+            }
+            &__section--all-initiatives {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+                display: grid;
+                grid-template-rows: 50px max-content;
+                row-gap: 5px;
+            }
+            &__section--found-us {
+                grid-column: 4/5;
+                grid-row: 1/3;
+                align-self: start;
+                display: grid;
+                row-gap: 5px;              
+            }
+        }
+        &__copy-right {
+            grid-column: 1/3;
+            grid-row: 3/4;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-200;
+            opacity: 0.4;
+            text-align: center;
+            align-self: end;
+            position: relative;
+            @include for-desktop-up {
+                grid-column: 4 /5;
+                grid-row: 1 / 3;
+                align-self: end;
+                padding-bottom: 50px;
+                text-align: left;
+            }
+            &:before {
+                content: "";
+                background-color: $grey-600;
+                width: 100%;
+                height: 2px;
+                top: -20px;
+                left: 4px;
+                position: absolute;
+                @include for-desktop-up {
+                    display: none;
+                }
+            }
+        }
+        &__section--found-us h5 {
+            display: none;
+            @include for-desktop-up {
+                display: inline-block;
+            }
+        }
+        &__navbar--found-us .c-footer__navbar__items {
+            display: grid;
+            grid-template-columns:max-content max-content;
+            column-gap: 40px;
+            grid-template-rows: 75px;
+            & .fa {
+                font-size: 1.9em !important;
+            }
+        }
     }
-}
-.c-footer__section--found-us h5 {
-    display: none;
-    @include for-desktop-up {
-        display: inline-block;
-    }
-}
-.c-footer__navbar--found-us .c-footer__navbar__items {
-    display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 50px;
-    & .fa {
-        font-size: 1.9em !important;
-    }
-  
 }

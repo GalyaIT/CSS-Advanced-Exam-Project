@@ -6,9 +6,10 @@
     background-color: $secondary-50;
     @include for-desktop-up {
         display: grid;
-        grid-template-columns: 1440px;
+        grid-template-columns: max-content;
         grid-template-rows: 572px;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -21,9 +22,11 @@
     @include for-desktop-up {
         grid-template-rows: 60px 330px;
         grid-template-columns: 1290px;
+        row-gap: 20px;
         align-items: center;
         h2 {
             text-align: center;
+            margin: 0;
         }
         &__instruction {
             display: grid;

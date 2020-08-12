@@ -10,9 +10,9 @@
     grid-template-rows: 1fr 250px;
     grid-row-gap: 30px;
     @include for-desktop-up {
-        grid-template-columns: 1fr 440px;
+        grid-template-columns: 59% 36%;
         grid-template-rows: 1fr;  
-        grid-column-gap:110px; 
+        grid-column-gap:5%; 
           
     }
     &__video {

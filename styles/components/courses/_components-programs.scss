@@ -8,7 +8,7 @@
     position: relative;
     @include for-desktop-up {
         display: grid;
-        grid-template-columns: 1hr;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 }
@@ -20,7 +20,7 @@
     position: relative;
     $arrow: url(./assets/icons/grey-arrow.svg);
     @include for-desktop-up {
-        grid-template-columns: 60%;
+        grid-template-columns: 53%;
         grid-template-rows: 1fr;
         align-self: center;
         padding-left: 50px;

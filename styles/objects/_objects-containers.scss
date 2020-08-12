@@ -4,12 +4,16 @@
     width: 100%;
     margin: 0 auto;
 }
-.o-page-wrapper{  
-   display:grid;
-   grid-template-rows:72px 1fr 555px;
-//    grid-row-gap: 5px;
-   width:100%;
-   @include for-desktop-up{
-    grid-template-rows:74px 1fr 312px;
-   }
+.o-centered-container{
+   width:90%;
+   margin:0 auto;
 }
+// .o-page-wrapper{  
+//    display:grid;
+//    grid-template-rows:72px 1fr 555px;
+// //    grid-row-gap: 5px;
+//    width:100%;
+//    @include for-desktop-up{
+//     grid-template-rows:74px 1fr 312px;
+//    }
+// }

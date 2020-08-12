@@ -115,8 +115,6 @@
     }
 }
 
-
-
 .c-search-box {
     top: 4%;
     left: 86%;
@@ -142,29 +140,12 @@
         outline: none;
         float: left;
         padding: 0;
-        color: orange;
+        color: $secondary-800;
         font-size: 16px;
-        transition: 0.4s;
+        transition: 1s ease-in-out;
         line-height: 35px;
         width: 0px;
-    }
-
-    &__search-btn {
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-        background: #2f3640;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.4s;
-        & a {
-            color: $primary-300;
-        }
-        &:hover {
-            background-color: white;
-        }
-    }
+    }   
     &:hover > &__search-txt {
         width: 240px;
         padding: 0 5px;
@@ -173,5 +154,6 @@
         align-self: center;
         margin-right: 5px;
         padding-left: 20px;
+       background-color: $secondary-50;
     }
 }
