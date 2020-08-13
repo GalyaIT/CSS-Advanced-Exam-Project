@@ -63,20 +63,50 @@
         grid-template-columns: 1fr;
         justify-items: start;
         align-items: center;
-        background-color: #fff;       
+        background-color: #fff;
         position: relative;
         top: -11px;
         @include for-desktop-up {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 190px 210px 225px 185px;
             grid-template-rows: 112px;
             top: 0;
-            grid-column-gap: 10px;
+            column-gap: 20px;
             padding-right: 80px;
-        }
+            $left: (105px, 150px, 150px);
+            @for $i from 1 through 3 {
+                div:nth-of-type(#{$i}):after {
+                    content: " ";
+                    background-color: $grey-100;
+                    position: absolute;
+                    top: 13px;
+                    height: 24px;
+                    width: 2px;
+                    left: nth($left, $i);
+                }
+            }
+            @include for-desktop {
+                grid-template-columns: 160px 174px 186px 150px;
+                grid-template-rows: 112px;
+                top: 0;
+                column-gap: 20px;
+                padding-right: 80px;
+                $left: (88px, 128px, 132px);
+                @for $i from 1 through 3 {
+                    div:nth-of-type(#{$i}):after {
+                        content: " ";
+                        background-color: $grey-100;
+                        position: absolute;
+                        top: 13px;
+                        height: 24px;
+                        width: 2px;
+                        left: nth($left, $i);
+                    }
+                }
+            }
+        }      
     }
     &__info {
-        margin: 0 70px;
-        // padding-left: 40px;
+        margin: 0 70px;      
         position: relative;
         @include for-desktop-up {
             justify-self: end;
@@ -111,12 +141,6 @@
             top: 100px;
             height: 2px;
             width: 20px;
-            @include for-desktop-up {
-                top: 22px;
-                height: 20px;
-                width: 2px;
-                left: 135px;
-            }
         }
     }
 }

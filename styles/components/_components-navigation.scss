@@ -116,16 +116,19 @@
 }
 
 .c-search-box {
-    top: 4%;
-    left: 86%;
-    background: white;
-    align-items: center;
-    display: flex;
-    border-radius: 40px;
-
-    @include for-phone-only {
+    display: none;
+    @include for-tablet-and-laptop{
         display: none;
     }
+    @include for-desktop-up{
+        top: 4%;
+        left: 86%;
+        background: white;
+        align-items: center;
+        display: flex;
+        border-radius: 40px;
+    }   
+   
     &__search-image {
         display: none;
         @include for-desktop-up {

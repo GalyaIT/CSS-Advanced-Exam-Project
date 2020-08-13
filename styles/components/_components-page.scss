@@ -1,0 +1,8 @@
+.c-page-wrapper{  
+    display:grid;
+    grid-template-rows:72px 1fr 555px;
+    width:100%;
+    @include for-desktop-up{
+     grid-template-rows:74px 1fr 312px;
+    }
+}
