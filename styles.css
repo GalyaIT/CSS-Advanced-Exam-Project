@@ -2342,6 +2342,7 @@ h5 {
   background-color: #66b9f8;
   border: 1px solid #ffffff;
   border-radius: 6px;
+  outline: none;
 }
 
 .c-trainers-section-contacts__form input::-webkit-input-placeholder {
@@ -2620,50 +2621,16 @@ h5 {
   border: 1px solid #919191;
   border-radius: 6px;
   outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
 }
 
 .c-contacts-section-form__form textarea {
   resize: none;
-}
-
-.c-contacts-section-form__form input,
-.c-contacts-section-form__form textarea::-webkit-input-placeholder {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 16px;
-}
-
-.c-contacts-section-form__form input,
-.c-contacts-section-form__form textarea:-ms-input-placeholder {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 16px;
-}
-
-.c-contacts-section-form__form input,
-.c-contacts-section-form__form textarea::-ms-input-placeholder {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 16px;
-}
-
-.c-contacts-section-form__form input,
-.c-contacts-section-form__form textarea::placeholder {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 16px;
+  padding-top: 16px;
 }
 
 .c-contacts-section-form__form p {

@@ -48,20 +48,17 @@
         input {
             border: 1px solid $grey-500;
             border-radius: 6px;          
-            outline: none;
-        }
-        textarea {
-            resize: none;
-        }
-        input,
-        textarea::placeholder {
-            color: $white;
+            outline: none;            
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
             padding-left: 16px;
         }
+        textarea {
+            resize: none;
+            padding-top: 16px;
+        }        
         p {
             font-size: 16px;
             line-height: 19px;
