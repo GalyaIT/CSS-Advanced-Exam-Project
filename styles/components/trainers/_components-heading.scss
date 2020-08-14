@@ -1,23 +1,22 @@
-@import"./../../utilities/utilities-animation";
+@import "./../../utilities/utilities-animation";
 
-.c-trainers-main-wrapper{
+.c-trainers-main-wrapper {
     // align-items: center;
     .c-main-heading {
         background: $secondary-600;
         color: white;
         text-align: center;
         padding: 45px 0px;
-        @include for-desktop-up {       
-            display: grid;      
-            grid-template-columns: 1fr 890px 1fr;      
+        position: relative;
+        z-index: -1;
+        @include for-desktop-up {
+            display: grid;
+            grid-template-columns: 1fr 890px 1fr;
             height: 100%;
-            padding:0;
+            padding: 0;
             .middle {
                 grid-column: 2;
-              
             }
         }
-     
     }
 }
-

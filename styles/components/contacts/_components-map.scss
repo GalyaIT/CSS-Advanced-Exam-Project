@@ -1,6 +1,6 @@
-.c-contacts-map-section-wrapper{
-  
-    position: relative;  
+.c-contacts-map-section-wrapper{  
+    position: relative;
+    z-index: -1;
     &:before{
         content: "";
         background: url(./assets/images/Map.svg);

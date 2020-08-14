@@ -1,8 +1,6 @@
 .c-managers-wrapper {
     .o-container {
-        display: grid;  
-        height: 100%;    
-        align-items: center;
+        display: grid;      
         @include for-desktop-up {
             grid-template-columns: 49% 49%;
         }

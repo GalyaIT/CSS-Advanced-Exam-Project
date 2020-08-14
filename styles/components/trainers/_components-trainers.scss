@@ -24,12 +24,12 @@
     }
     &:before {
         content: url(./assets/images/primary-horizontal-border.svg);
-        position: absolute;
+        position: absolute;      
         @include for-desktop-up {
             content: url(./assets/images/primary-horizontal-line-long.svg);
             position: absolute;
             top: 0;
-            left: -10%;
+            left: -10%;           
         }       
     }
 }

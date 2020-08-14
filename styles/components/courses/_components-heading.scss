@@ -1,24 +1,25 @@
 @import "./../../settings/settings-colors";
 @import "./../../settings/_settings-breakpoints";
 @import "./../../settings/settings-shadows";
-@import"./../../utilities/utilities-animation";
+@import "./../../utilities/utilities-animation";
 
-.c-courses-main-wrapper{
+.c-courses-main-wrapper {
     .c-main-heading {
         background: $blue-400;
         color: white;
         text-align: center;
         padding: 45px 0px;
-        @include for-desktop-up {       
-            display: grid;      
-            grid-template-columns: 1fr 720px 1fr;      
+        position: relative;
+        z-index: -1;
+        @include for-desktop-up {
+            display: grid;
+            grid-template-columns: 1fr 720px 1fr;
             height: 100%;
             .middle {
                 grid-column: 2;
                 align-self: center;
             }
         }
-     
     }
     .c-main-heading__label {
         font-style: normal;
@@ -32,4 +33,3 @@
         padding: 4px 8px;
     }
 }
-

@@ -1852,6 +1852,8 @@ h5 {
   color: white;
   text-align: center;
   padding: 45px 0px;
+  position: relative;
+  z-index: -1;
 }
 
 @media (min-width: 1200px) {
@@ -1995,6 +1997,8 @@ h5 {
   color: white;
   text-align: center;
   padding: 45px 0px;
+  position: relative;
+  z-index: -1;
 }
 
 @media (min-width: 1200px) {
@@ -2015,8 +2019,8 @@ h5 {
 .c-trainers-main-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 356px 1400px 1360px 662px;
-      grid-template-rows: 356px 1400px 1360px 662px;
+  -ms-grid-rows: 356px 1488px 1360px 662px;
+      grid-template-rows: 356px 1488px 1360px 662px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   color: #565656;
@@ -2102,10 +2106,6 @@ h5 {
   display: block;
 }
 
-.c-card-info--managers {
-  margin: 0;
-}
-
 @media (min-width: 1200px) {
   .c-card-info--managers {
     display: -ms-grid;
@@ -2153,10 +2153,6 @@ h5 {
 .c-managers-wrapper .o-container {
   display: -ms-grid;
   display: grid;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (min-width: 1200px) {
@@ -2718,6 +2714,7 @@ h5 {
 
 .c-contacts-map-section-wrapper {
   position: relative;
+  z-index: -1;
 }
 
 .c-contacts-map-section-wrapper:before {
