@@ -5,7 +5,7 @@
     row-gap: 20px;
     color: $grey-700;
     @include for-desktop-up {
-        grid-template-rows: 302px 0 566px 263px 554px 530px 482px;
+        grid-template-rows: 302px 0 566px 263px 554px 440px 482px;
         row-gap: 5px;
     }    
 }

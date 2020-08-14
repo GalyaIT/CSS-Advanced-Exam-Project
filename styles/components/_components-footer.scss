@@ -16,11 +16,11 @@
     }
     .c-footer {
         display: grid;
-        grid-template-columns: 46% 52%;
+        grid-template-columns: 49% 49%;
         grid-template-rows: 300px 100px 120px;
         align-content: center;
         height: 100%;
-        column-gap: 5px;
+        // column-gap: 5px;
         &__emoji {
             display: none;
         }

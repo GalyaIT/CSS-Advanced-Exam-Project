@@ -8,7 +8,7 @@
     position: relative;
     row-gap: 50px;
     @include for-desktop-up {
-        grid-template-columns:  45% 45%;     
+        grid-template-columns:  44% 44%;     
         grid-template-rows: 1fr;     
         justify-content: space-between;
         padding-left: 50px;        
@@ -26,7 +26,7 @@
         }
     }
     & h2 {
-        width: 82%;
+        width: 83%;
         padding-left: 45px;
         @include for-desktop-up {
            padding:0;  

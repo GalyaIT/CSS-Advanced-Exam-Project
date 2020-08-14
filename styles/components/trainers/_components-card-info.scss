@@ -52,6 +52,7 @@
         }
     }
     &--managers {
+        margin:0;
         @include for-desktop-up {
             display: grid;
             grid-template-columns: max-content max-content;

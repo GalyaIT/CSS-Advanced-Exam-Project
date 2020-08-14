@@ -9,7 +9,7 @@
     grid-row-gap: 60px;
    
     @include for-desktop-up {
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 39% 40%;
         grid-template-rows: 1fr;
         grid-column-gap: 110px;
         justify-content: space-between;

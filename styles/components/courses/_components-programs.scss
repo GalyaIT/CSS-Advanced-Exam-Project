@@ -20,7 +20,7 @@
     position: relative;
     $arrow: url(./assets/icons/grey-arrow.svg);
     @include for-desktop-up {
-        grid-template-columns: 53%;
+        grid-template-columns: 54%;
         grid-template-rows: 1fr;
         align-self: center;
         padding-left: 50px;
@@ -34,12 +34,13 @@
                 transform: scale(0.9);
             }
         }
-    }
-    &__content__menu {
+        
+    } 
+    &__content-menu {
         position: relative;
         p {
             background: #fff;
-            padding: 14px 56px 16px 14px;
+            padding: 14px 76px 16px 14px;
             border-radius: 5px;
         }
         $top: (10%, 30%, 54%, 82%);
@@ -81,5 +82,8 @@
         @include for-desktop-up {
             padding: 0;
         }
+    }
+    &__paragrapgh p{
+        margin-bottom: 0;
     }
 }

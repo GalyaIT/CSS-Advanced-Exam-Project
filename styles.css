@@ -7,7 +7,6 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *::before,
@@ -318,7 +317,7 @@ img {
 
 @font-face {
   font-family: 'Lato';
-  src: url("../../assets/fonts/Lato-Regular.ttf") format("truetype");
+  src: url("../../assets/fonts/latoregular.woff2") format("woff2"), url("../../assets/fonts/latoregular.woff") format("woff");
 }
 
 html,
@@ -761,15 +760,13 @@ h5 {
 .c-footer-wrapper .c-footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 46% 52%;
-      grid-template-columns: 46% 52%;
+  -ms-grid-columns: 49% 49%;
+      grid-template-columns: 49% 49%;
   -ms-grid-rows: 300px 100px 120px;
       grid-template-rows: 300px 100px 120px;
   -ms-flex-line-pack: center;
       align-content: center;
   height: 100%;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
 }
 
 .c-footer-wrapper .c-footer__emoji {
@@ -1043,8 +1040,8 @@ h5 {
 
 @media (min-width: 1200px) {
   .c-courses-main-wrapper {
-    -ms-grid-rows: 302px 0 566px 263px 554px 530px 482px;
-        grid-template-rows: 302px 0 566px 263px 554px 530px 482px;
+    -ms-grid-rows: 302px 0 566px 263px 554px 440px 482px;
+        grid-template-rows: 302px 0 566px 263px 554px 440px 482px;
     row-gap: 5px;
   }
 }
@@ -1323,8 +1320,8 @@ h5 {
 
 @media (min-width: 1200px) {
   .c-trainings {
-    -ms-grid-columns: 59% 36%;
-        grid-template-columns: 59% 36%;
+    -ms-grid-columns: 57% 35%;
+        grid-template-columns: 57% 35%;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     grid-column-gap: 5%;
@@ -1370,8 +1367,8 @@ h5 {
 
 @media (min-width: 1200px) {
   .c-instructions {
-    -ms-grid-columns: 40% 40%;
-        grid-template-columns: 40% 40%;
+    -ms-grid-columns: 39% 40%;
+        grid-template-columns: 39% 40%;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     grid-column-gap: 110px;
@@ -1485,8 +1482,8 @@ h5 {
 
 @media (min-width: 1200px) {
   .c-program {
-    -ms-grid-columns: 53%;
-        grid-template-columns: 53%;
+    -ms-grid-columns: 54%;
+        grid-template-columns: 54%;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-flex-item-align: center;
@@ -1507,17 +1504,17 @@ h5 {
   }
 }
 
-.c-program__content__menu {
+.c-program__content-menu {
   position: relative;
 }
 
-.c-program__content__menu p {
+.c-program__content-menu p {
   background: #fff;
-  padding: 14px 56px 16px 14px;
+  padding: 14px 76px 16px 14px;
   border-radius: 5px;
 }
 
-.c-program__content__menu p:nth-of-type(1):before {
+.c-program__content-menu p:nth-of-type(1):before {
   content: url(./assets/icons/grey-arrow.svg);
   position: absolute;
   display: inline-block;
@@ -1525,7 +1522,7 @@ h5 {
   top: 10%;
 }
 
-.c-program__content__menu p:nth-of-type(2):before {
+.c-program__content-menu p:nth-of-type(2):before {
   content: url(./assets/icons/grey-arrow.svg);
   position: absolute;
   display: inline-block;
@@ -1533,7 +1530,7 @@ h5 {
   top: 30%;
 }
 
-.c-program__content__menu p:nth-of-type(3):before {
+.c-program__content-menu p:nth-of-type(3):before {
   content: url(./assets/icons/grey-arrow.svg);
   position: absolute;
   display: inline-block;
@@ -1541,7 +1538,7 @@ h5 {
   top: 54%;
 }
 
-.c-program__content__menu p:nth-of-type(4):before {
+.c-program__content-menu p:nth-of-type(4):before {
   content: url(./assets/icons/grey-arrow.svg);
   position: absolute;
   display: inline-block;
@@ -1550,16 +1547,16 @@ h5 {
 }
 
 @media (min-width: 1200px) {
-  .c-program__content__menu p:nth-of-type(1):before {
+  .c-program__content-menu p:nth-of-type(1):before {
     top: 11%;
   }
-  .c-program__content__menu p:nth-of-type(2):before {
+  .c-program__content-menu p:nth-of-type(2):before {
     top: 35%;
   }
-  .c-program__content__menu p:nth-of-type(3):before {
+  .c-program__content-menu p:nth-of-type(3):before {
     top: 58%;
   }
-  .c-program__content__menu p:nth-of-type(4):before {
+  .c-program__content-menu p:nth-of-type(4):before {
     top: 82%;
   }
 }
@@ -1590,6 +1587,10 @@ h5 {
   .c-program__content h2 {
     padding: 0;
   }
+}
+
+.c-program__paragrapgh p {
+  margin-bottom: 0;
 }
 
 .c-serificates-wrapper {
@@ -1658,8 +1659,8 @@ h5 {
 
 @media (min-width: 1200px) {
   .c-information {
-    -ms-grid-columns: 45% 45%;
-        grid-template-columns: 45% 45%;
+    -ms-grid-columns: 44% 44%;
+        grid-template-columns: 44% 44%;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -webkit-box-pack: justify;
@@ -1686,7 +1687,7 @@ h5 {
 }
 
 .c-information h2 {
-  width: 82%;
+  width: 83%;
   padding-left: 45px;
 }
 
@@ -1857,8 +1858,8 @@ h5 {
   .c-courses-main-wrapper .c-main-heading {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 640px 1fr;
-        grid-template-columns: 1fr 640px 1fr;
+    -ms-grid-columns: 1fr 720px 1fr;
+        grid-template-columns: 1fr 720px 1fr;
     height: 100%;
   }
   .c-courses-main-wrapper .c-main-heading .middle {
@@ -2000,8 +2001,8 @@ h5 {
   .c-trainers-main-wrapper .c-main-heading {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 850px 1fr;
-        grid-template-columns: 1fr 850px 1fr;
+    -ms-grid-columns: 1fr 890px 1fr;
+        grid-template-columns: 1fr 890px 1fr;
     height: 100%;
     padding: 0;
   }
@@ -2014,8 +2015,8 @@ h5 {
 .c-trainers-main-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 356px 1488px 1360px 662px;
-      grid-template-rows: 356px 1488px 1360px 662px;
+  -ms-grid-rows: 356px 1400px 1360px 662px;
+      grid-template-rows: 356px 1400px 1360px 662px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   color: #565656;
@@ -2101,6 +2102,10 @@ h5 {
   display: block;
 }
 
+.c-card-info--managers {
+  margin: 0;
+}
+
 @media (min-width: 1200px) {
   .c-card-info--managers {
     display: -ms-grid;
@@ -2148,6 +2153,10 @@ h5 {
 .c-managers-wrapper .o-container {
   display: -ms-grid;
   display: grid;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1200px) {
